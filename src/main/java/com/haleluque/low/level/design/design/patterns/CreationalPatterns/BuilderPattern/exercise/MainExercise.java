@@ -14,9 +14,10 @@ public class MainExercise {
         String fullDessert = sc.nextLine();
         String fullAppetizer = sc.nextLine();
 
-        MealBuilder meatBuilder = new MealBuilder(fullMainDish, fullSideDish, fullDrink);
-        meatBuilder.setDessert(fullDessert);
-        meatBuilder.setAppetizer(fullAppetizer);
+        MealBuilder meatBuilder = new
+                MealBuilder(fullMainDish, fullSideDish, fullDrink)
+                    .setDessert(fullDessert)
+                    .setAppetizer(fullAppetizer);
         Meal meal = meatBuilder.build();
 
         System.out.println("Full Meal Summary:");
