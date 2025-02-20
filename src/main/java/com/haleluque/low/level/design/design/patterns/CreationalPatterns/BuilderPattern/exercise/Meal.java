@@ -8,14 +8,14 @@ public class Meal {
     private final String appetizer;
 
     private Meal(MealBuilder builder) {
-        this.mainDish = builder.mainDish;
-        this.sideDish = builder.sideDish;
-        this.drink = builder.drink;
-        this.dessert = builder.dessert;
-        this.appetizer = builder.appetizer;
+        this.mainDish = builder.getMainDish();
+        this.sideDish = builder.getSideDish();
+        this.drink = builder.getDrink();
+        this.dessert = builder.getDessert();
+        this.appetizer = builder.getAppetizer();
     }
 
-    public static synchronized Meal getInstance(MealBuilder builder) {
+    public static Meal getInstance(MealBuilder builder) {
         return new Meal(builder);
     }
 

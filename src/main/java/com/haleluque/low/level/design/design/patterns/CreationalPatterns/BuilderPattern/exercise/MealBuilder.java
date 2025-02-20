@@ -1,12 +1,11 @@
 package com.haleluque.low.level.design.design.patterns.CreationalPatterns.BuilderPattern.exercise;
 
 public class MealBuilder {
-
-    public String mainDish;
-    public String sideDish;
-    public String drink;
-    public String dessert = "Default Dessert";
-    public String appetizer = "Default Appetizer";
+    private final String mainDish;
+    private final String sideDish;
+    private final String drink;
+    private String dessert = "Default Dessert";
+    private String appetizer = "Default Appetizer";
 
     public MealBuilder(String mainDish, String sideDish, String drink) {
         this.mainDish = mainDish;
@@ -26,5 +25,25 @@ public class MealBuilder {
 
     public Meal build() {
         return Meal.getInstance(this);
+    }
+
+    public String getMainDish() {
+        return mainDish;
+    }
+
+    public String getSideDish() {
+        return sideDish;
+    }
+
+    public String getDrink() {
+        return drink;
+    }
+
+    public String getDessert() {
+        return dessert;
+    }
+
+    public String getAppetizer() {
+        return appetizer;
     }
 }
