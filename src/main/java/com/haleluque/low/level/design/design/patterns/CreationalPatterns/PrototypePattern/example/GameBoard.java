@@ -1,7 +1,5 @@
 package com.haleluque.low.level.design.design.patterns.CreationalPatterns.PrototypePattern.example;
 
-import com.haleluque.low.level.design.design.patterns.CreationalPatterns.PrototypePattern.exampleWithout.GamePieceW;
-
 import java.util.ArrayList;
 import java.util.List;
 
